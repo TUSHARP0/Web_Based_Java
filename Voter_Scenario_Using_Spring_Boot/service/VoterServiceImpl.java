@@ -47,7 +47,7 @@ public class VoterServiceImpl implements VoterService {
 		Voter voter = repo.findByEmailAndPassword(req.getEmail(), req.getPassword())
 				.orElseThrow(()-> new ResourceNotFoundException("Invalid Data"));
 		AuthResponseDto resp = mapper.map(voter, AuthResponseDto.class);
-		String msg="Mia Khalifa";
+		String msg="xxx";
 		if(resp.isStatus()) {
 			msg="Hello, "+resp.getVoterName()+" : You've voted successfully";
 			resp.setMsg(msg);
