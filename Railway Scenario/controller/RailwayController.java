@@ -17,6 +17,7 @@ import com.app.service.RailwayService;
 
 @RestController
 @RequestMapping("/railways")
+@Validated
 public class RailwayController {
 
 	@Autowired
